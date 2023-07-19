@@ -251,7 +251,21 @@ nav ul li .fa-youtube {
     bottom: -100px;
 }
 
+.feature1 {
+    margin-bottom: 150px;
+}
+#feature2 {
+    margin-bottom: 150px;
+}
+#feature2 .feature-img {
+    text-align: left;
+}
 
+#feature2 .feature-img img:last-child {
+    /* bottom: -100px; */
+    right: 0;
+    left: unset;
+}
 
 /* Make Reponsive */
 
@@ -284,7 +298,8 @@ nav ul li .fa-youtube {
     }
 
     /* Reverse */
-    .banner1-container {
+    .banner1-container,
+    #feature-container-2 {
         flex-direction: column-reverse;
     }
 
@@ -333,6 +348,9 @@ nav ul li .fa-youtube {
     .feature1 .feature-img {
         margin-top: 40px;
     }
+    #feature-container-2 .feature-img {
+        margin-top: 40px;
+    }
 }
 
 
@@ -367,7 +385,8 @@ nav ul li .fa-youtube {
     }
 
     /* Reverse */
-    .banner1-container {
+    .banner1-container,
+    #feature-container-2 {
         flex-direction: column-reverse;
     }
 
@@ -408,6 +427,9 @@ nav ul li .fa-youtube {
         padding-top: 40px;
     }
     .feature1 .feature-img {
+        margin-top: 40px;
+    }
+    #feature-container-2 .feature-img {
         margin-top: 40px;
     }
 }
