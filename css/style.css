@@ -206,6 +206,9 @@ nav ul li .fa-youtube {
 .games-videos-container .section-description {
     padding: 8px 0;
 }
+.games-videos-container .item {
+    /* position: relative; */
+}
 .games-videos-container .item img {
     width: 100%;
 }
@@ -215,6 +218,45 @@ nav ul li .fa-youtube {
     font-weight: 500;
     line-height: 25px; 
     margin-top: 10px;
+}
+.item-img {
+    position: relative;
+}
+.online-games .play-video {
+    opacity: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    color: white;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    cursor: pointer;
+}
+.play-video:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.online-games .play-video span {
+    display: block;
+}
+.online-games .play-video span i {
+    color: white;
+    font-size: 2rem;
+}
+.play-video p {
+    color: white;
+    font-weight: 600;
+    color: var(--pink);
+    font-size: 1.2rem;
 }
 
 /* Feature Section */
