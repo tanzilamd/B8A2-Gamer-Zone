@@ -15,6 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: var(--normal-text);
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -35,6 +36,9 @@ body {
     color: white;
     cursor: pointer;
 }
+.text-middle {
+    text-align: center;
+}
 .section-title-gradient {
     font-size: 2.7rem;
     font-weight: 700;
@@ -42,11 +46,19 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.section-title {
+    color: var(--bold-text-color);
+    font-weight: 700;
+    font-size: 2.7rem;
+}
 .section-description {
     color: var(--normal-text);
     font-size: 1rem;
     font-weight: 400;
     line-height: 30px;
+}
+.section-gap {
+    padding: 120px 0;
 }
 /* Header section */
 /* Nav */
@@ -184,7 +196,26 @@ nav ul li .fa-youtube {
     margin-bottom: 24px;
 }
 
-
+/* Online games and videos */
+.games-videos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.games-videos-container .section-description {
+    padding: 8px 0;
+}
+.games-videos-container .item img {
+    width: 100%;
+}
+.games-videos-container .item .caption {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px; 
+    margin-top: 10px;
+}
 
 /* Make Reponsive */
 
@@ -193,11 +224,20 @@ nav ul li .fa-youtube {
     /* Common */
     nav,
     .banner1-container,
-    .banner2-container{
+    .banner2-container,
+    main{
         padding-right: 20px;
         padding-left: 20px;
     }
     
+    /* Grid */
+    .games-videos-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px; 
+        margin-top: 30px;
+    }
+
+
     /* Flex Direction */
     .nav-container,
     nav ul,
@@ -222,12 +262,7 @@ nav ul li .fa-youtube {
     .banner2-container .banner-content {
         text-align: center;
     }
-    .banner1-container .banner-content {
-        
-    }
-    /* .banner1-container h1 {
-        text-align: center;
-    } */
+    
 
     /* Spacing */
     .nav-container {
@@ -254,6 +289,17 @@ nav ul li .fa-youtube {
         padding-right: 20px;
         padding-left: 20px;
     }
+    main {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    /* Grid */
+    .games-videos-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px; 
+        margin-top: 30px;
+    }
     
     /* Flex Direction */
     .nav-container,
@@ -282,9 +328,6 @@ nav ul li .fa-youtube {
     .banner1-container .banner-content {
         
     }
-    /* .banner1-container h1 {
-        text-align: center;
-    } */
 
     /* Spacing */
     .nav-container {
