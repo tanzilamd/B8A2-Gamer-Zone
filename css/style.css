@@ -267,6 +267,60 @@ nav ul li .fa-youtube {
     left: unset;
 }
 
+
+/* Careers */
+.careers {
+    background-color: var(--pink);
+    color: #FFF;
+    padding: 120px 0;
+    /* background-image: url("../images/Group65.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%; */
+}
+.career-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.career-content {
+    width: 50%;
+}
+.career-content h3{
+    color: #FFF;
+    margin-bottom: 24px;
+}
+.career-content p {
+    color: #FFF;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+.career-table {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.career-table tr td:last-child {
+    text-align: right;
+}
+.career-table td {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 40px;
+}
+.career-content button {
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: var(--pink);
+}
+.career-img {
+    width: 50%;
+}
+.career-img img {
+    width: 100%;
+}
+
+
 /* ALL GAMES */
 .games {
     background-color: rgba(255, 66, 165, 0.03);
@@ -409,7 +463,8 @@ footer ul li a {
     nav ul,
     .banner1-container,
     .banner2-container,
-    .feature-container {
+    .feature-container,
+    .career-container {
         flex-direction: column;
     }
 
@@ -424,7 +479,9 @@ footer ul li a {
     .banner-img,
     .feature-content,
     .feature-img, 
-    .feature-content-parent {
+    .feature-content-parent,
+    .career-img,
+    .career-content {
         width: 100%;
     }
 
@@ -451,6 +508,9 @@ footer ul li a {
     /* Spacing */
     .nav-container {
         gap: 40px;
+    }
+    .career-container {
+        gap: 60px;
     }
     nav ul {
         gap: 30px;
@@ -494,7 +554,8 @@ footer ul li a {
     nav ul,
     .banner1-container,
     .banner2-container,
-    .feature-container {
+    .feature-container,
+    .career-container {
         flex-direction: column;
     }
 
@@ -509,7 +570,9 @@ footer ul li a {
     .banner-img,
     .feature-content,
     .feature-img, 
-    .feature-content-parent {
+    .feature-content-parent,
+    .career-img,
+    .career-content {
         width: 100%;
     }
 
@@ -545,5 +608,8 @@ footer ul li a {
     }
     #feature-container-2 .feature-img {
         margin-top: 40px;
+    }
+    .career-container {
+        gap: 60px;
     }
 }
