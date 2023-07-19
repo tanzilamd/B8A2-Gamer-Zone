@@ -87,6 +87,9 @@ nav ul li:last-child {
     background-color: rgba(11, 2, 35, 0.10);
     padding: 10px 23px;
 }
+nav ul li:last-child i {
+    font-size: 1.3rem;
+}
 nav ul li a {
     text-decoration: none;
     color: #3C354F;
@@ -97,6 +100,7 @@ nav ul li img {
 }
 nav ul li .fa-youtube {
     margin: 0 10px;
+    color: #F61C0D;
 }
 .logo {
     display: flex;
