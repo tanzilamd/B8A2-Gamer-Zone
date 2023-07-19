@@ -267,6 +267,122 @@ nav ul li .fa-youtube {
     left: unset;
 }
 
+/* ALL GAMES */
+.games {
+    background-color: rgba(255, 66, 165, 0.03);
+    padding: 120px 0;
+}
+.games-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 2px solid transparent;
+}
+.game-item h4 {
+    color: var(--bold-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.game-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.game-item:hover {
+    border: 2px solid var(--pink);
+    cursor: pointer;
+}
+.game-item:hover h4 {
+    color: var(--pink);
+}
+
+/* Footer */
+footer {
+    padding: 120px 0;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: #0B0223;
+}
+.footer-container {
+    max-width: 800px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+footer .f-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+footer .f-logo img {
+    height: 30px;
+}
+footer .f-logo h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+footer .f-logo span {
+    color: var(--pink);
+}
+footer ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+}
+.footer-nav {
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+.social-media {
+    justify-content: space-evenly;
+    margin-bottom: 60px;    
+    
+}
+.conditions {
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+.footer-nav li a {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+.social-media li a i {
+    font-size: 2rem;
+    color: white;
+}
+.social-media li a {
+    color: #FFF;
+}
+.conditions li a, footer p {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
 /* Make Reponsive */
 
 /* Mobile Responsive */
@@ -275,7 +391,7 @@ nav ul li .fa-youtube {
     nav,
     .banner1-container,
     .banner2-container,
-    main{
+    .padding-responsive{
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -359,14 +475,12 @@ nav ul li .fa-youtube {
     /* Common */
     nav,
     .banner1-container,
-    .banner2-container{
+    .banner2-container,
+    .padding-responsive{
         padding-right: 20px;
         padding-left: 20px;
     }
-    main {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
+
     
     /* Grid */
     .games-videos-container {
