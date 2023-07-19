@@ -7,7 +7,7 @@
     --bold-text-color : #0B0223;
     --normal-text : #534C64;
     --blue : #4EC5F7;
-    --light-bg : linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    --light-bg : rgba(255, 66, 165, 0.03);
 }
 
 
@@ -34,6 +34,19 @@ body {
     font-weight: 600;
     color: white;
     cursor: pointer;
+}
+.section-title-gradient {
+    font-size: 2.7rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-description {
+    color: var(--normal-text);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
 }
 /* Header section */
 /* Nav */
@@ -135,6 +148,38 @@ nav ul li .fa-youtube {
     display: inline-flex;
     gap: 20px;
 }
-.banner1-container .banner-img img {
+.banner-img img {
     width: 100%;
+}
+
+/* Banner 2 */
+.banner2 {
+    background-color: var(--light-bg);
+    padding: 90px 0;
+}
+.banner2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner2-container .banner-content {
+    text-align: right;
+}
+.banner2-container .banner-content h4 {
+    color: var(--normal-text);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 45px;
+}
+.banner2-container .banner-content h4 span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.banner2-container .section-description {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.banner2-container .btn-primary {
+    margin-bottom: 24px;
 }
